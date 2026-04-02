@@ -6,8 +6,8 @@
 
 # WAT framework
 .tmp/
-tools/
-workflows/
+/tools/
+/workflows/
 
 # Environment & credentials
 .env
