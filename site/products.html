@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Products — Savoury Lab GmbH</title>
+  <meta name="description" content="Explore our premium product range: fruit juices, frozen potato products, confectionery, snacks, and beverages from world-class producers.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="icon" href="assets/images/logo.png" type="image/png">
+  <style>
+    .fade-in { opacity: 0; transform: translateY(24px); transition: opacity 0.6s ease, transform 0.6s ease; }
+    .fade-in.visible { opacity: 1; transform: translateY(0); }
+    .category-nav { display:flex; gap:12px; flex-wrap:wrap; justify-content:center; margin-bottom:40px; }
+    .category-nav a { padding:10px 24px; border-radius:24px; background:var(--white); color:var(--text); font-weight:600; font-size:0.9rem; box-shadow:0 2px 8px rgba(0,0,0,0.06); transition: all var(--transition); }
+    .category-nav a:hover, .category-nav a.active { background:var(--green); color:var(--white); }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="container">
+      <a href="index.html" class="header-logo">
+        <img src="assets/images/logo.png" alt="Savoury Lab GmbH Logo">
+      </a>
+      <nav class="nav">
+        <a href="index.html"><span class="en">About Us</span><span class="de">Über Uns</span></a>
+        <a href="products.html" class="active"><span class="en">Products</span><span class="de">Produkte</span></a>
+        <a href="partnerships.html"><span class="en">Partnerships</span><span class="de">Partnerschaften</span></a>
+        <a href="contact.html"><span class="en">Contact</span><span class="de">Kontakt</span></a>
+        <button class="lang-toggle" onclick="toggleLang()">DE</button>
+      </nav>
+      <button class="mobile-menu-btn" onclick="toggleMenu()" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero" style="padding:60px 0 50px;">
+    <div class="container text-center">
+      <h1>
+        <span class="en">Our Product Range</span>
+        <span class="de">Unser Produktsortiment</span>
+      </h1>
+      <p style="margin:0 auto;">
+        <span class="en">From natural juices to artisan confectionery — premium quality, exclusively distributed in Germany.</span>
+        <span class="de">Von natürlichen Säften bis hin zu handwerklichen Süßwaren — Premium-Qualität, exklusiv in Deutschland vertrieben.</span>
+      </p>
+    </div>
+  </section>
+
+  <!-- PRODUCT CATEGORIES -->
+  <section class="section">
+    <div class="container">
+
+      <!-- Juhayna Pure Juices -->
+      <div id="juhayna" class="fade-in" style="margin-bottom:64px;">
+        <div class="section-header">
+          <h2>
+            <span class="en">Juhayna Pure Juices</span>
+            <span class="de">Juhayna Pure Säfte</span>
+          </h2>
+          <p>
+            <span class="en">100% natural fruit juices — no added sugar, no additives, no preservatives. Available in 1L and 235ml packaging. Exclusive distribution in Germany.</span>
+            <span class="de">100% natürliche Fruchtsäfte — ohne Zuckerzusatz, ohne Zusatzstoffe, ohne Konservierungsstoffe. Erhältlich in 1L und 235ml Verpackungen. Exklusivvertrieb in Deutschland.</span>
+          </p>
+        </div>
+        <div class="product-grid">
+          <div class="product-card">
+            <div class="product-card-img"><img src="assets/images/juhayna/1625753167_187_130723_orangeen-179x300.png" alt="Pure Orange"></div>
+            <div class="product-card-body"><h3>Pure Orange</h3><p><span class="en">Classic orange juice, rich in Vitamin C</span><span class="de">Klassischer Orangensaft, reich an Vitamin C</span></p></div>
+          </div>
+          <div class="product-card">
+            <div class="product-card-img"><img src="assets/images/juhayna/1625753172_162_129385_mangopeachen-179x300.png" alt="Pure Mango &amp; Peach"></div>
+            <div class="product-card-body"><h3>Pure Mango &amp; Peach</h3><p><span class="en">Tropical blend of mango and peach</span><span class="de">Tropische Mischung aus Mango und Pfirsich</span></p></div>
+          </div>
+          <div class="product-card">
+            <div class="product-card-img"><img src="assets/images/juhayna/1625753165_689_132603_pineappleen-179x300.png" alt="Pure Pineapple"></div>
+            <div class="product-card-body"><h3>Pure Pineapple</h3><p><span class="en">Sweet and tangy pineapple juice</span><span class="de">Süßer und spritziger Ananassaft</span></p></div>
+          </div>
+          <div class="product-card">
+            <div class="product-card-img"><img src="assets/images/juhayna/1625753174_966_125111_guavamixen-179x300.png" alt="Pure Guava Cocktail"></div>
+            <div class="product-card-body"><h3>Pure Guava Cocktail</h3><p><span class="en">Refreshing guava and fruit blend</span><span class="de">Erfrischende Guave-Fruchtmischung</span></p></div>
+          </div>
+          <div class="product-card">
+            <div class="product-card-img"><img src="assets/images/juhayna/1625753178_993_120657_cocktailen-179x300.png" alt="Pure Cocktail"></div>
+            <div class="product-card-body"><h3>Pure Cocktail</h3><p><span class="en">Multi-fruit cocktail blend</span><span class="de">Multi-Frucht-Cocktail-Mischung</span></p></div>
+          </div>
+          <div class="product-card">
+            <div class="product-card-img"><img src="assets/images/juhayna/1625753170_442_128117_orangecarroten-179x300.png" alt="Pure Orange &amp; Carrot"></div>
+            <div class="product-card-body"><h3>Pure Orange &amp; Carrot</h3><p><span class="en">Vitamin-rich orange and carrot blend</span><span class="de">Vitaminreiche Orangen-Karotten-Mischung</span></p></div>
+          </div>
+          <div class="product-card">
+            <div class="product-card-img"><img src="assets/images/juhayna/1625753163_409_127299_redgrapesen-179x300.png" alt="Pure Red Grapes"></div>
+            <div class="product-card-body"><h3>Pure Red Grapes</h3><p><span class="en">Rich and full-bodied red grape juice</span><span class="de">Reichhaltiger und vollmundiger Traubensaft</span></p></div>
+          </div>
+          <div class="product-card">
+            <div class="product-card-img"><img src="assets/images/juhayna/1625753162_859_136273_romanen-179x300.png" alt="Pure Pomegranate"></div>
+            <div class="product-card-body"><h3>Pure Pomegranate</h3><p><span class="en">Antioxidant-rich pomegranate juice</span><span class="de">Antioxidantienreicher Granatapfelsaft</span></p></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- IFCG Frozen Products -->
+      <div id="ifcg" class="fade-in" style="margin-bottom:64px;">
+        <div class="section-header">
+          <h2>
+            <span class="en">IFCG Frozen Potato &amp; Sweet Potato</span>
+            <span class="de">IFCG Tiefkühl-Kartoffel &amp; Süßkartoffel</span>
+          </h2>
+          <p>
+            <span class="en">Premium frozen fries from Egypt's leading manufacturer. IQF technology, HACCP &amp; ISO 22000 certified. Zero trans fats, non-GMO, gluten-free. Exclusive distribution in Germany.</span>
+            <span class="de">Premium-Tiefkühlfritten vom führenden ägyptischen Hersteller. IQF-Technologie, HACCP- &amp; ISO 22000-zertifiziert. Null Transfette, gentechnikfrei, glutenfrei. Exklusivvertrieb in Deutschland.</span>
+          </p>
+        </div>
+        <div class="product-grid">
+          <div class="product-card">
+            <div class="product-card-img" style="background:#fff8f0;"><img src="https://ifcgegypt.com/wp-content/uploads/2023/03/frensh-fries-10×10-mm-430x430.jpeg" alt="Pommes Frites 10x10mm" style="max-height:220px;"></div>
+            <div class="product-card-body"><h3>Pommes Frites 10x10mm</h3><p><span class="en">Classic cut, crispy and universally loved</span><span class="de">Klassischer Schnitt, knusprig und überall beliebt</span></p></div>
+          </div>
+          <div class="product-card">
+            <div class="product-card-img" style="background:#fff8f0;"><img src="https://ifcgegypt.com/wp-content/uploads/2023/03/frensh-fries-7×7-mm-430x430.png" alt="Allumettes 7x7mm" style="max-height:220px;"></div>
+            <div class="product-card-body"><h3>Allumettes 7x7mm</h3><p><span class="en">Light, crisp, and quick to cook</span><span class="de">Leicht, knusprig und schnell zubereitet</span></p></div>
+          </div>
+          <div class="product-card">
+            <div class="product-card-img" style="background:#fff8f0;"><img src="https://ifcgegypt.com/wp-content/uploads/2023/03/frensh-fries-13×13-mm-430x430.png" alt="Steak Fries 13x13mm" style="max-height:220px;"></div>
+            <div class="product-card-body"><h3>Steak Fries 13x13mm</h3><p><span class="en">Thick, hearty premium cut</span><span class="de">Dicker, herzhafter Premium-Schnitt</span></p></div>
+          </div>
+          <div class="product-card">
+            <div class="product-card-img" style="background:#fff8f0;"><img src="https://ifcgegypt.com/wp-content/uploads/2025/02/crinkle-fries-430x430.jpeg" alt="Crinkle Fries" style="max-height:220px;"></div>
+            <div class="product-card-body"><h3>Crinkle Fries</h3><p><span class="en">Wavy ridges for extra crispy bite</span><span class="de">Wellige Rillen für extra knusprigen Biss</span></p></div>
+          </div>
+          <div class="product-card">
+            <div class="product-card-img" style="background:#fff8f0;"><img src="https://ifcgegypt.com/wp-content/uploads/2023/05/Sweet-Potato-Straight-Cut-Fries-10×10-mm-430x430.png" alt="Sweet Potato Straight Cut" style="max-height:220px;"></div>
+            <div class="product-card-body"><h3><span class="en">Sweet Potato Straight Cut</span><span class="de">Süßkartoffel Gerade Geschnitten</span></h3><p><span class="en">Naturally sweet, rich in Vitamin A</span><span class="de">Natürlich süß, reich an Vitamin A</span></p></div>
+          </div>
+          <div class="product-card">
+            <div class="product-card-img" style="background:#fff8f0;"><img src="https://ifcgegypt.com/wp-content/uploads/2023/05/Sweet-Potato-–-Crinkle-Cut-Fries-11×11-mm-1-430x430.png" alt="Sweet Potato Crinkle Cut" style="max-height:220px;"></div>
+            <div class="product-card-body"><h3><span class="en">Sweet Potato Crinkle Cut</span><span class="de">Süßkartoffel Wellenform</span></h3><p><span class="en">Crispy with naturally sweet flavor</span><span class="de">Knusprig mit natürlich süßem Geschmack</span></p></div>
+          </div>
+          <div class="product-card">
+            <div class="product-card-img" style="background:#fff8f0;"><img src="https://ifcgegypt.com/wp-content/uploads/2023/04/wedges-seasoning-430x430.png" alt="Seasoned Wedges" style="max-height:220px;"></div>
+            <div class="product-card-body"><h3><span class="en">Seasoned Wedges</span><span class="de">Gewürzte Kartoffelspalten</span></h3><p><span class="en">Golden, crispy, rustic style</span><span class="de">Goldene, knusprige, rustikale Art</span></p></div>
+          </div>
+          <div class="product-card">
+            <div class="product-card-img" style="background:#fff8f0;"><img src="https://ifcgegypt.com/wp-content/uploads/2023/04/waffle-cut-seasoning-430x430.png" alt="Waffle Cut" style="max-height:220px;"></div>
+            <div class="product-card-body"><h3>Waffle Cut</h3><p><span class="en">Fun crisscross shape, great crunch</span><span class="de">Lustige Gitterform, toller Biss</span></p></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Own Brands -->
+      <div id="brands" class="fade-in">
+        <div class="section-header text-center">
+          <h2>
+            <span class="en">Our Catalogue Brands</span>
+            <span class="de">Unsere Katalogmarken</span>
+          </h2>
+          <p>
+            <span class="en">A curated selection of premium products we import and distribute across Europe.</span>
+            <span class="de">Eine kuratierte Auswahl erstklassiger Produkte, die wir in ganz Europa importieren und vertreiben.</span>
+          </p>
+        </div>
+        <div class="brand-grid">
+          <div class="brand-card">
+            <div class="brand-card-img"><img src="assets/images/catalogues/fruzzle_cover.png" alt="Fruzzle"></div>
+            <div class="brand-card-body">
+              <h3>Fruzzle</h3>
+              <p><span class="en">Vibrant in Every Drop — Premium fruit juice in glass bottles. A colorful, playful brand offering natural cocktail juices.</span><span class="de">Vibrant in Every Drop — Premium-Fruchtsaft in Glasflaschen. Eine farbenfrohe, verspielte Marke mit natürlichen Cocktailsäften.</span></p>
+            </div>
+          </div>
+          <div class="brand-card">
+            <div class="brand-card-img"><img src="assets/images/catalogues/zee_cover.png" alt="ZEE"></div>
+            <div class="brand-card-body">
+              <h3>ZEE</h3>
+              <p><span class="en">Fresh and vibrant fruit drink brand with a focus on citrus and tropical flavors.</span><span class="de">Frische und lebendige Fruchtgetränkemarke mit Fokus auf Zitrus- und tropischen Geschmacksrichtungen.</span></p>
+            </div>
+          </div>
+          <div class="brand-card">
+            <div class="brand-card-img"><img src="assets/images/catalogues/tarweeqa_cover.png" alt="Tarweeqa"></div>
+            <div class="brand-card-body">
+              <h3>Tarweeqa</h3>
+              <p><span class="en">Indulgent layered cake bars with rich chocolate coating, cream filling, and fruity accents.</span><span class="de">Genussvolle Schichtkuchen-Riegel mit reichhaltiger Schokoladenumhüllung, Cremefüllung und fruchtigen Akzenten.</span></p>
+            </div>
+          </div>
+          <div class="brand-card">
+            <div class="brand-card-img"><img src="assets/images/catalogues/crumzy_cover.png" alt="Crumzi"></div>
+            <div class="brand-card-body">
+              <h3>Crumzi</h3>
+              <p><span class="en">Double Choco, Double Joy — Premium filled cookies with chocolate coating, available in multiple indulgent flavors.</span><span class="de">Double Choco, Double Joy — Premium gefüllte Kekse mit Schokoladenüberzug, erhältlich in mehreren genussvollen Geschmacksrichtungen.</span></p>
+            </div>
+          </div>
+          <div class="brand-card">
+            <div class="brand-card-img"><img src="assets/images/catalogues/gummy_hug_cover.png" alt="Gummy Hug"></div>
+            <div class="brand-card-body">
+              <h3>Gummy Hug</h3>
+              <p><span class="en">Fun and colorful gummy candy brand — bears, rings, fruits, and more. Perfect for kids and adults alike.</span><span class="de">Lustige und bunte Gummibärchen-Marke — Bärchen, Ringe, Früchte und mehr. Perfekt für Kinder und Erwachsene.</span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <h4>Savoury Lab GmbH</h4>
+          <p><span class="en">Your trusted partner for premium food import, distribution, and spice production in Germany.</span><span class="de">Ihr zuverlässiger Partner für erstklassigen Lebensmittelimport, Vertrieb und Gewürzproduktion in Deutschland.</span></p>
+          <p style="margin-top:12px; font-size:0.85rem;">Grenzstr. 101, 45881 Gelsenkirchen<br>Deutschland</p>
+        </div>
+        <div>
+          <h4><span class="en">Quick Links</span><span class="de">Schnellzugriff</span></h4>
+          <ul class="footer-links">
+            <li><a href="index.html"><span class="en">About Us</span><span class="de">Über Uns</span></a></li>
+            <li><a href="products.html"><span class="en">Products</span><span class="de">Produkte</span></a></li>
+            <li><a href="partnerships.html"><span class="en">Partnerships</span><span class="de">Partnerschaften</span></a></li>
+            <li><a href="contact.html"><span class="en">Contact</span><span class="de">Kontakt</span></a></li>
+          </ul>
+        </div>
+        <div>
+          <h4><span class="en">Contact</span><span class="de">Kontakt</span></h4>
+          <ul class="footer-links">
+            <li>+49 155 633 45665</li>
+            <li>info@savourylab.de</li>
+            <li>VAT: DE454825359</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        &copy; 2026 Savoury Lab GmbH. <span class="en">All rights reserved.</span><span class="de">Alle Rechte vorbehalten.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

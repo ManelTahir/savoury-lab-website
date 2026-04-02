@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Savoury Lab GmbH — Spice Experts | Import &amp; Distribution</title>
+  <meta name="description" content="Savoury Lab GmbH — Premium food import, spice production, and exclusive distribution in Germany. Your bridge between world-class producers and the European market.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="icon" href="assets/images/logo.png" type="image/png">
+  <style>
+    .fade-in { opacity: 0; transform: translateY(24px); transition: opacity 0.6s ease, transform 0.6s ease; }
+    .fade-in.visible { opacity: 1; transform: translateY(0); }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="container">
+      <a href="index.html" class="header-logo">
+        <img src="assets/images/logo.png" alt="Savoury Lab GmbH Logo">
+      </a>
+      <nav class="nav">
+        <a href="index.html" class="active">
+          <span class="en">About Us</span><span class="de">Über Uns</span>
+        </a>
+        <a href="products.html">
+          <span class="en">Products</span><span class="de">Produkte</span>
+        </a>
+        <a href="partnerships.html">
+          <span class="en">Partnerships</span><span class="de">Partnerschaften</span>
+        </a>
+        <a href="contact.html">
+          <span class="en">Contact</span><span class="de">Kontakt</span>
+        </a>
+        <button class="lang-toggle" onclick="toggleLang()">DE</button>
+      </nav>
+      <button class="mobile-menu-btn" onclick="toggleMenu()" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container">
+      <h1>
+        <span class="en">Your Gateway to Premium<br>Food Products in Europe</span>
+        <span class="de">Ihr Tor zu erstklassigen<br>Lebensmitteln in Europa</span>
+      </h1>
+      <p>
+        <span class="en">Savoury Lab GmbH imports, distributes, and soon produces the finest food products — from Egyptian juices and frozen goods to artisan spices — right here in Germany.</span>
+        <span class="de">Savoury Lab GmbH importiert, vertreibt und produziert bald die feinsten Lebensmittel — von ägyptischen Säften und Tiefkühlwaren bis hin zu handwerklichen Gewürzen — direkt hier in Deutschland.</span>
+      </p>
+      <div style="display:flex; gap:16px; flex-wrap:wrap;">
+        <a href="products.html" class="btn btn-primary">
+          <span class="en">Explore Products</span><span class="de">Produkte entdecken</span>
+        </a>
+        <a href="contact.html" class="btn btn-outline">
+          <span class="en">Get in Touch</span><span class="de">Kontakt aufnehmen</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT SECTION -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header text-center fade-in">
+        <h2>
+          <span class="en">About Savoury Lab</span>
+          <span class="de">Über Savoury Lab</span>
+        </h2>
+        <p>
+          <span class="en">Spice Experts — Bridging premium producers with the German market</span>
+          <span class="de">Gewürz-Experten — Wir verbinden Premium-Hersteller mit dem deutschen Markt</span>
+        </p>
+      </div>
+
+      <div style="max-width:800px; margin:0 auto;" class="fade-in">
+        <div style="background: var(--white); border-radius: var(--radius); padding: 40px; box-shadow: var(--shadow); border-left: 4px solid var(--orange);">
+          <p style="font-size:1.05rem;">
+            <span class="en">At <strong>Savoury-Lab GmbH</strong>, we are passionate entrepreneurs dedicated to the art of food. Rooted in the agro-food sector, our journey is built on over two generations of expertise in the world of spices, combining heritage, craftsmanship, and innovation.</span>
+            <span class="de">Bei <strong>Savoury-Lab GmbH</strong> sind wir leidenschaftliche Unternehmer, die sich der Kunst des Essens verschrieben haben. Verwurzelt im Agrar- und Lebensmittelsektor basiert unser Weg auf über zwei Generationen Erfahrung in der Welt der Gewürze — eine Verbindung aus Tradition, Handwerkskunst und Innovation.</span>
+          </p>
+          <p style="font-size:1.05rem;">
+            <span class="en">Based in Gelsenkirchen, Germany, Savoury-Lab GmbH specializes in the processing, blending, and packaging of whole and mixed spices. With more than 25 years of hands-on experience in the spices industry, we have developed a strong reputation for creating authentic oriental spice blends. Our products reflect a unique balance between traditional know-how and modern production standards, ensuring both authenticity and quality.</span>
+            <span class="de">Mit Sitz in Gelsenkirchen, Deutschland, hat sich Savoury-Lab GmbH auf die Verarbeitung, Mischung und Verpackung von ganzen und gemischten Gewürzen spezialisiert. Mit mehr als 25 Jahren praktischer Erfahrung in der Gewürzbranche haben wir uns einen starken Ruf für authentische orientalische Gewürzmischungen erarbeitet. Unsere Produkte spiegeln eine einzigartige Balance zwischen traditionellem Know-how und modernen Produktionsstandards wider — für Authentizität und Qualität.</span>
+          </p>
+          <p style="font-size:1.05rem;">
+            <span class="en">We work closely with carefully selected suppliers to source premium raw materials. Our approach is centered on consistency, full traceability, and long-term, reliable partnerships. Our products are tailored to meet the needs of the Horeca sector, professional kitchens, and private-label clients.</span>
+            <span class="de">Wir arbeiten eng mit sorgfältig ausgewählten Lieferanten zusammen, um erstklassige Rohstoffe zu beziehen. Unser Ansatz basiert auf Beständigkeit, vollständiger Rückverfolgbarkeit und langfristigen, zuverlässigen Partnerschaften. Unsere Produkte sind auf die Bedürfnisse des HoReCa-Sektors, professioneller Küchen und Private-Label-Kunden zugeschnitten.</span>
+          </p>
+          <p style="font-size:1.05rem;">
+            <span class="en">Beyond spice production, we are also specialized in the import and distribution of international food products, particularly from the Middle East and Eastern regions. Through strong, long-standing partnerships with producers and suppliers in countries such as Egypt, Syria, Turkey, and beyond, we bring authentic flavors and high-quality products to the European market.</span>
+            <span class="de">Über die Gewürzproduktion hinaus sind wir auch auf den Import und Vertrieb internationaler Lebensmittel spezialisiert, insbesondere aus dem Nahen Osten und östlichen Regionen. Durch starke, langjährige Partnerschaften mit Produzenten und Lieferanten in Ländern wie Ägypten, Syrien, der Türkei und darüber hinaus bringen wir authentische Aromen und hochwertige Produkte auf den europäischen Markt.</span>
+          </p>
+          <p style="font-size:1.05rem; margin-bottom:0;">
+            <span class="en">At Savoury-Lab GmbH, we believe that trust, quality, and cultural authenticity are the foundations of lasting success. Our mission is to connect traditions with modern markets while delivering excellence in every product we offer.</span>
+            <span class="de">Bei Savoury-Lab GmbH glauben wir, dass Vertrauen, Qualität und kulturelle Authentizität die Grundlagen für dauerhaften Erfolg sind. Unsere Mission ist es, Traditionen mit modernen Märkten zu verbinden und in jedem Produkt, das wir anbieten, Exzellenz zu liefern.</span>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHAT WE DO -->
+  <section class="section section-alt">
+    <div class="container">
+      <div class="section-header text-center fade-in">
+        <h2>
+          <span class="en">What We Do</span>
+          <span class="de">Was wir tun</span>
+        </h2>
+      </div>
+      <div class="stats fade-in">
+        <div class="stat">
+          <h3>3</h3>
+          <p>
+            <span class="en">Business Pillars</span>
+            <span class="de">Geschäftssäulen</span>
+          </p>
+        </div>
+        <div class="stat">
+          <h3>6+</h3>
+          <p>
+            <span class="en">Product Brands</span>
+            <span class="de">Produktmarken</span>
+          </p>
+        </div>
+        <div class="stat">
+          <h3>2</h3>
+          <p>
+            <span class="en">Exclusive Partnerships</span>
+            <span class="de">Exklusivpartnerschaften</span>
+          </p>
+        </div>
+        <div class="stat">
+          <h3>DE</h3>
+          <p>
+            <span class="en">Made &amp; Distributed in Germany</span>
+            <span class="de">Hergestellt &amp; vertrieben in Deutschland</span>
+          </p>
+        </div>
+      </div>
+
+      <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(300px,1fr)); gap:32px; margin-top:48px;">
+        <div class="fade-in" style="background:var(--white); padding:32px; border-radius:var(--radius); box-shadow:var(--shadow);">
+          <div style="font-size:2rem; margin-bottom:12px;">&#127757;</div>
+          <h3>
+            <span class="en">Import &amp; Distribution</span>
+            <span class="de">Import &amp; Vertrieb</span>
+          </h3>
+          <p style="color:var(--text-light); margin-top:8px;">
+            <span class="en">We source premium food products from trusted international manufacturers and distribute them across Germany and Europe.</span>
+            <span class="de">Wir beziehen erstklassige Lebensmittel von vertrauenswürdigen internationalen Herstellern und vertreiben sie in ganz Deutschland und Europa.</span>
+          </p>
+        </div>
+        <div class="fade-in" style="background:var(--white); padding:32px; border-radius:var(--radius); box-shadow:var(--shadow);">
+          <div style="font-size:2rem; margin-bottom:12px;">&#129748;</div>
+          <h3>
+            <span class="en">Spice Production</span>
+            <span class="de">Gewürzproduktion</span>
+          </h3>
+          <p style="color:var(--text-light); margin-top:8px;">
+            <span class="en">Our upcoming spice factory in Germany will produce premium spice blends, bringing artisan quality to the European market.</span>
+            <span class="de">Unsere kommende Gewürzfabrik in Deutschland wird erstklassige Gewürzmischungen produzieren und handwerkliche Qualität auf den europäischen Markt bringen.</span>
+          </p>
+        </div>
+        <div class="fade-in" style="background:var(--white); padding:32px; border-radius:var(--radius); box-shadow:var(--shadow);">
+          <div style="font-size:2rem; margin-bottom:12px;">&#9989;</div>
+          <h3>
+            <span class="en">EU Compliance</span>
+            <span class="de">EU-Konformität</span>
+          </h3>
+          <p style="color:var(--text-light); margin-top:8px;">
+            <span class="en">Every product meets rigorous EU food safety standards. We handle all regulatory requirements, from lab testing to market access.</span>
+            <span class="de">Jedes Produkt erfüllt die strengen EU-Lebensmittelsicherheitsstandards. Wir kümmern uns um alle regulatorischen Anforderungen, von Labortests bis zum Marktzugang.</span>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <h4>Savoury Lab GmbH</h4>
+          <p>
+            <span class="en">Your trusted partner for premium food import, distribution, and spice production in Germany.</span>
+            <span class="de">Ihr zuverlässiger Partner für erstklassigen Lebensmittelimport, Vertrieb und Gewürzproduktion in Deutschland.</span>
+          </p>
+          <p style="margin-top:12px; font-size:0.85rem;">
+            Grenzstr. 101, 45881 Gelsenkirchen<br>
+            Deutschland
+          </p>
+        </div>
+        <div>
+          <h4>
+            <span class="en">Quick Links</span>
+            <span class="de">Schnellzugriff</span>
+          </h4>
+          <ul class="footer-links">
+            <li><a href="index.html"><span class="en">About Us</span><span class="de">Über Uns</span></a></li>
+            <li><a href="products.html"><span class="en">Products</span><span class="de">Produkte</span></a></li>
+            <li><a href="partnerships.html"><span class="en">Partnerships</span><span class="de">Partnerschaften</span></a></li>
+            <li><a href="contact.html"><span class="en">Contact</span><span class="de">Kontakt</span></a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>
+            <span class="en">Contact</span>
+            <span class="de">Kontakt</span>
+          </h4>
+          <ul class="footer-links">
+            <li>+49 155 633 45665</li>
+            <li>info@savourylab.de</li>
+            <li>VAT: DE454825359</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        &copy; 2026 Savoury Lab GmbH. <span class="en">All rights reserved.</span><span class="de">Alle Rechte vorbehalten.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

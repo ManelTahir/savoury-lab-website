@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact — Savoury Lab GmbH</title>
+  <meta name="description" content="Get in touch with Savoury Lab GmbH — your partner for premium food import and distribution in Germany.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="icon" href="assets/images/logo.png" type="image/png">
+  <style>
+    .fade-in { opacity: 0; transform: translateY(24px); transition: opacity 0.6s ease, transform 0.6s ease; }
+    .fade-in.visible { opacity: 1; transform: translateY(0); }
+    .map-container { border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow); margin-top: 48px; }
+    .map-container iframe { width: 100%; height: 400px; border: 0; display: block; }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="container">
+      <a href="index.html" class="header-logo">
+        <img src="assets/images/logo.png" alt="Savoury Lab GmbH Logo">
+      </a>
+      <nav class="nav">
+        <a href="index.html">
+          <span class="en">About Us</span><span class="de">Über Uns</span>
+        </a>
+        <a href="products.html">
+          <span class="en">Products</span><span class="de">Produkte</span>
+        </a>
+        <a href="partnerships.html">
+          <span class="en">Partnerships</span><span class="de">Partnerschaften</span>
+        </a>
+        <a href="contact.html" class="active">
+          <span class="en">Contact</span><span class="de">Kontakt</span>
+        </a>
+        <button class="lang-toggle" onclick="toggleLang()">DE</button>
+      </nav>
+      <button class="mobile-menu-btn" onclick="toggleMenu()" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container">
+      <h1>
+        <span class="en">Get in Touch</span>
+        <span class="de">Kontakt aufnehmen</span>
+      </h1>
+      <p>
+        <span class="en">Whether you're a retailer, distributor, or producer — we'd love to hear from you. Let's explore how we can work together.</span>
+        <span class="de">Ob Einzelhändler, Distributor oder Produzent — wir freuen uns auf Ihre Nachricht. Lassen Sie uns gemeinsam Möglichkeiten der Zusammenarbeit erkunden.</span>
+      </p>
+    </div>
+  </section>
+
+  <!-- CONTACT SECTION -->
+  <section class="section">
+    <div class="container">
+      <div class="contact-grid fade-in">
+
+        <!-- CONTACT INFO -->
+        <div class="contact-info-card">
+          <h3>
+            <span class="en">Contact Information</span>
+            <span class="de">Kontaktinformationen</span>
+          </h3>
+
+          <div class="contact-item">
+            <div class="contact-icon">&#128100;</div>
+            <div>
+              <strong>Ms. Manel Tahir</strong><br>
+              <span style="color:var(--text-light); font-size:0.9rem;">
+                <span class="en">Sales Manager</span>
+                <span class="de">Vertriebsleiterin</span>
+              </span>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-icon">&#128205;</div>
+            <div>
+              Grenzstr. 101<br>
+              45881 Gelsenkirchen<br>
+              Deutschland
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-icon">&#128222;</div>
+            <div>
+              <a href="tel:+4915563345665">+49 155 633 45665</a>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-icon">&#9993;</div>
+            <div>
+              <a href="mailto:info@savourylab.de">info@savourylab.de</a>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-icon">&#127970;</div>
+            <div>
+              <span class="en">VAT ID:</span><span class="de">USt-IdNr.:</span> DE454825359<br>
+              EORI: DE268137577460150
+            </div>
+          </div>
+
+          <div style="margin-top:24px; padding:16px 20px; background:var(--bg-alt); border-radius:8px;">
+            <p style="font-size:0.9rem; color:var(--text-light); margin:0;">
+              <span class="en"><strong>Business hours:</strong> Monday – Friday, 9:00 – 17:00 CET</span>
+              <span class="de"><strong>Geschäftszeiten:</strong> Montag – Freitag, 9:00 – 17:00 MEZ</span>
+            </p>
+          </div>
+        </div>
+
+        <!-- CONTACT FORM -->
+        <form class="contact-form" onsubmit="handleContactForm(event)">
+          <h3>
+            <span class="en">Send Us a Message</span>
+            <span class="de">Schreiben Sie uns</span>
+          </h3>
+          <div class="form-group">
+            <label>
+              <span class="en">Your Name</span><span class="de">Ihr Name</span>
+            </label>
+            <input type="text" name="name" required>
+          </div>
+          <div class="form-group">
+            <label>
+              <span class="en">Email Address</span><span class="de">E-Mail-Adresse</span>
+            </label>
+            <input type="email" name="email" required>
+          </div>
+          <div class="form-group">
+            <label>
+              <span class="en">Subject</span><span class="de">Betreff</span>
+            </label>
+            <select name="subject">
+              <option value="General Inquiry">
+                General Inquiry / Allgemeine Anfrage
+              </option>
+              <option value="Product Inquiry">
+                Product Inquiry / Produktanfrage
+              </option>
+              <option value="Partnership Opportunity">
+                Partnership / Partnerschaft
+              </option>
+              <option value="Distribution Request">
+                Distribution / Vertrieb
+              </option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>
+              <span class="en">Message</span><span class="de">Nachricht</span>
+            </label>
+            <textarea name="message" rows="5" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary" style="width:100%;">
+            <span class="en">Send Message</span><span class="de">Nachricht senden</span>
+          </button>
+          <p style="font-size:0.8rem; color:var(--text-light); margin-top:12px; margin-bottom:0;">
+            <span class="en">This will open your email client. For direct inquiries, email us at info@savourylab.de.</span>
+            <span class="de">Dies öffnet Ihr E-Mail-Programm. Für direkte Anfragen schreiben Sie uns an info@savourylab.de.</span>
+          </p>
+        </form>
+
+      </div>
+
+      <!-- MAP -->
+      <div class="map-container fade-in">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2484.5!2d7.0847!3d51.5075!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47b8e7a1a1a1a1a1%3A0x0!2sGrenzstr.+101%2C+45881+Gelsenkirchen!5e0!3m2!1sen!2sde!4v1700000000000"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          title="Savoury Lab GmbH Location">
+        </iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <h4>Savoury Lab GmbH</h4>
+          <p>
+            <span class="en">Your trusted partner for premium food import, distribution, and spice production in Germany.</span>
+            <span class="de">Ihr zuverlässiger Partner für erstklassigen Lebensmittelimport, Vertrieb und Gewürzproduktion in Deutschland.</span>
+          </p>
+          <p style="margin-top:12px; font-size:0.85rem;">
+            Grenzstr. 101, 45881 Gelsenkirchen<br>
+            Deutschland
+          </p>
+        </div>
+        <div>
+          <h4>
+            <span class="en">Quick Links</span>
+            <span class="de">Schnellzugriff</span>
+          </h4>
+          <ul class="footer-links">
+            <li><a href="index.html"><span class="en">About Us</span><span class="de">Über Uns</span></a></li>
+            <li><a href="products.html"><span class="en">Products</span><span class="de">Produkte</span></a></li>
+            <li><a href="partnerships.html"><span class="en">Partnerships</span><span class="de">Partnerschaften</span></a></li>
+            <li><a href="contact.html"><span class="en">Contact</span><span class="de">Kontakt</span></a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>
+            <span class="en">Contact</span>
+            <span class="de">Kontakt</span>
+          </h4>
+          <ul class="footer-links">
+            <li>+49 155 633 45665</li>
+            <li>info@savourylab.de</li>
+            <li>VAT: DE454825359</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        &copy; 2026 Savoury Lab GmbH. <span class="en">All rights reserved.</span><span class="de">Alle Rechte vorbehalten.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

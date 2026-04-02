@@ -1,0 +1,26 @@
+# Business documents (not for public repo — root level only)
+/Catalogues/
+/IFCG/
+/Juhayna/
+/Savourylab_Firma_Daten/
+
+# WAT framework
+.tmp/
+tools/
+workflows/
+
+# Environment & credentials
+.env
+credentials.json
+token.json
+
+# Python
+__pycache__/
+*.pyc
+
+# OS
+Thumbs.db
+.DS_Store
+
+# PDF source files
+*.pdf
